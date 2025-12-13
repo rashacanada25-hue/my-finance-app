@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אתר מודעות מכירה דינמי</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    <h1>🛒 אתר מודעות מכירה</h1>
+    
+    <label for="priceInput">
+        הצג מוצרים במחיר מקסימלי (עדכון מיידי):
+    </label>
+    
+    <input 
+        type="number" 
+        id="priceInput" 
+        oninput="displayFilteredProducts(this.value)" 
+        placeholder="הכנס מחיר (לדוגמה: 1500)"
+        min="0">
+
+    <hr>
+    
+    <div id="resultsContainer">
+        <p style="color: grey;">הקלד מחיר בשדה למעלה כדי לראות את המודעות המסוננות.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
