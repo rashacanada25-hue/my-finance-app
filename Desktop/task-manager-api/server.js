@@ -7,8 +7,10 @@ const app = express();
 // Middleware לקריאת JSON מהגוף של הבקשה
 app.use(express.json());
 
+
 // מחרוזת החיבור עם המשתמש rasha-26 והסיסמה hello123
 const mongoURI = 'mongodb+srv://rasha-26:hello123@cluster0.tdvmbnh.mongodb.net/task_manager_api?retryWrites=true&w=majority';
+
 
 // חיבור ל-MongoDB Atlas
 mongoose.connect(mongoURI)
